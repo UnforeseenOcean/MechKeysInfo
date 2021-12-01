@@ -1,6 +1,11 @@
 # MechKeysInfo
 Little tidbits about making mechanical keyboards
 
+### Foreword
+These information have been compiled from what I've gathered online, through other people and/or by word-of-mouth. 
+
+Please consult other people if you are not sure, and don't treat this as a be-all-end-all truth. This document is provided for guidance use only.
+
 ## Rookie Mistakes and Things That Are Good To Know
 - Where are the 2.25U and 2.75U key stabilizers?
 
@@ -42,3 +47,18 @@ Common lengths for the longer keys are:
 - 2.25U (Left Shift, ANSI Enter)
 - 2.75U (Right Shift)
 - 6.5U (Spacebar)
+
+- I can't decide what switch to get! There are too many!
+
+First of all, don't worry. First make your board with "MX-Alps footprint", which supports both Cherry MX and Alps style switches (two major types of switches), then try to narrow the switch selection later.
+
+Think of what you're looking for, or maybe go to your local electronics store and give the display units a try. What do you feel is the most important aspect? Sound and the feel? Or just the tactile feeling? Or none of the above?
+
+- Sound and tactile feel is important to me
+  - Go for Tactile/Clicky switches
+- Don't care about the sound / I hate the clicking noises / The keyboard shouldn't be this loud
+  - Go for Quiet/Silent Tactile (which has muted sound) or Linear switches
+- I hate all of the above, can I go back to membrane keyboard?
+  - You certainly can, but try Linear switches first
+
+Remember: You do NOT have to go for the most expensive or most exotic switch to enjoy building mechanical keyboards. You have options to modify the switch, such as adding a film between top and bottom case, or lubricating the switch.
