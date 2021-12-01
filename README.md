@@ -1,7 +1,7 @@
 # MechKeysInfo
 Little tidbits about making mechanical keyboards
 
-## Rookie Mistakes
+## Rookie Mistakes and Things That Are Good To Know
 - Where are the 2.25U and 2.75U key stabilizers?
 
 2.25 and 2.75U keys both use 2U key stabilizers. See the picture below. Smallest outline is 2U key, and the largest key is the 2.75U key.
@@ -31,3 +31,14 @@ Then start setting up your keys. They will fit together like a glove.
 See here in keyboard-layout-editor.com after selecting the key in question:
 
 ![IMG1638254960](https://user-images.githubusercontent.com/11834016/143999993-c9d62e9a-2731-4802-a5be-ddbb688916e1.png)
+
+U unit is calculated by how many regular key (for example, Q key) you can fit into the same space this key is taking up. So for 2U keys, it takes two, and 6.5U takes six and a half keys.
+
+Common lengths for the longer keys are:
+- 1.25U (Ctrl, Alt, Win, Menu, FN)
+- 1.5U (Tab, Backslash)
+- 1.75U (Caps Lock)
+- 2U (Backspace, Num Pad +, Num Pad Enter, Num Pad 0)
+- 2.25U (Left Shift, ANSI Enter)
+- 2.75U (Right Shift)
+- 6.5U (Spacebar)
