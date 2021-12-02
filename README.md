@@ -64,3 +64,14 @@ Think of what you're looking for, or maybe go to your local electronics store an
   - You certainly can, but try Linear switches first
 
 Remember: You do NOT have to go for the most expensive or most exotic switch to enjoy building mechanical keyboards. You have options to modify the switch, such as adding a film between top and bottom case, or lubricating the switch.
+
+### Is this footprint 3-pin or 5-pin?
+
+You can count the pins with this order:
+
+![IMG1638418209](https://user-images.githubusercontent.com/11834016/144357720-5f24b704-7efe-4c73-a539-271485dfa567.png)
+
+
+In this case, this is a 5-pin switch footprint. Same can be done to a switch.
+
+(Note: 3-pin switch can be used on 5-pin footprint without modification, but the opposite cannot be done without modification.)
