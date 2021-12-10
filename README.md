@@ -93,9 +93,25 @@ In this case, this is a 5-pin switch footprint. Same can be done to a switch.
  
 ![IMG1639175263](https://user-images.githubusercontent.com/11834016/145649307-bd83ad3f-b066-42c8-a07b-29f3e29bfb0a.png)
 
-11. Now move down to other sections. Set `MANUFACTURER` to something that fits your business, then...
+11. Now move down to other sections. Set `MANUFACTURER` and `PRODUCT` to something that fits your business, then...
 12. Go to `MATRIX_ROWS` and `MATRIX_COLS`. This is where you absolutely need the schematic. Find how many ELECTRICAL columns and rows you have, and write it down there. (for example, this is 11 by 11 matrix)
 
 ![IMG1639175534](https://user-images.githubusercontent.com/11834016/145649655-8605f035-931f-459e-8139-2ab4c0cebbf8.png)
 
+This is NOT the same as key columns. You must use what is shown on your schematic.
 
+13. Go to `MATRIX_ROW_PINS` and `MATRIX_COL_PINS`. Read the numbers shown in the schematic, and translate it here. 
+
+![IMG1639175999](https://user-images.githubusercontent.com/11834016/145650268-82e7a6d0-9585-4925-b4d0-9ad71ca0de9e.png)
+
+For example, with this schematic it would be:
+```
+#define MATRIX_ROW_PINS { B7, D0, D1, D2, D3, D5, D4, D6, D7, B4, B5 }
+#define MATRIX_COL_PINS { B3, B2, B1, B0, E6, F0, F1, F4, F5, F6, F7 }
+```
+
+Note: What you write here and what you said how large the matrix is up there must match. If you write 11 on `MATRIX_ROWS`, `MATRIX_ROW_PINS` should be 11 elements long.
+
+14. If you wired your diode in other direction you have to change `DIODE_DIRECTION`. If yours was set up like mine, you don't have to touch this.
+15. If your keyboard has NUM LOCK, CAPS LOCK, and/or SCROLL LOCK LEDs, define them in `LED_NUM_LOCK_PIN` and so on then uncomment it (remove two slashes in the front of the line).
+16. Now open `(keyboard name).h` in your code editor. Go down to `LAYOUT`. You will see a message about how layout works. You will want to do the second part first. Look at your schematic and write down the order in which the keys are arranged.
