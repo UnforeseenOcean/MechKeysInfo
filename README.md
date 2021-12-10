@@ -75,3 +75,27 @@ You can count the pins with this order:
 In this case, this is a 5-pin switch footprint. Same can be done to a switch.
 
 (Note: 3-pin switch can be used on 5-pin footprint without modification, but the opposite cannot be done without modification.)
+
+### How do I set up QMK for my keyboard?
+
+(NOTE: This section is what I understood from the documentations and pointers people gave me. This may include incomplete info or incorrect info. Please refer to the latest QMK documentation for clarification.)
+
+1. Get QMK MSYS from their site.
+2. Type `qmk setup`.
+3. Answer `y` to everything. This will clone the QMK repository into your user folder.
+4. Now you type your new keyboard's name in lowercase letters or numbers. For example, `luna80`
+5. It will ask you about the name. It is recommended to just press Enter if you've set up the Git environment, or use your GitHub name. I personally didn't because I won't be selling this board and as you can see my GitHub name does not match the name I operate under.
+6. Press Enter to confirm, and you will see a message that tells you that a keyboard template has been created under the `keyboards` folder.
+7. Go to `(username)/qmk_firmware/keyboards` and find your keyboard's name.
+8. You will find a bunch of files, but just look at `config.h` for now.
+9. Don't touch the `VENDOR_ID` unless you know exactly what you're doing, and change the `PRODUCT_ID` to something unique, using `0-9 A-F`. For example, `0x0539` or `0xDEAD`
+10. If you've installed `MSYS` (Git for Windows will set it up for you) you will also find some Windows version of Linux utilities. `cd` into the `keyboards` folder and type: `grep "0x(your id)" -r`. If you see multiple entries, you might want to change that to something unique-er. It's probably fine to use similar values for your keyboard, but as far as I can understand it's not recommended. For example, `grep "0x1337" -r` results in the following:
+ 
+![IMG1639175263](https://user-images.githubusercontent.com/11834016/145649307-bd83ad3f-b066-42c8-a07b-29f3e29bfb0a.png)
+
+11. Now move down to other sections. Set `MANUFACTURER` to something that fits your business, then...
+12. Go to `MATRIX_ROWS` and `MATRIX_COLS`. This is where you absolutely need the schematic. Find how many ELECTRICAL columns and rows you have, and write it down there. (for example, this is 11 by 11 matrix)
+
+![IMG1639175534](https://user-images.githubusercontent.com/11834016/145649655-8605f035-931f-459e-8139-2ab4c0cebbf8.png)
+
+
