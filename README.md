@@ -176,5 +176,7 @@ You can swap the numbers around if you want, but make sure it is reflected on th
 
 UPDATE: You can press `Ctrl+Shift+I` on QMK Configurator to upload your WIP config, and edit it. In my case I needed to get rid of redundant keys, so I left few of the keys as not assigned so I can merge them later.
 
+Another update: Use keyboard-layout-editor.com to create your layout, then use [https://qmk.fm/converter/]https://qmk.fm/converter/ to turn it into info.json. They didn't put it on their wiki, so I had to go looking for it.
+
 22. Compile the keyboard firmware with `qmk compile -kb (keyboard name) -km (keymap name)`. You have to make sure it fits into the memory space, else you will have a build failure and need to start chopping the features out.
 23. After that, flash it onto your keyboard with QMK Companion. With any luck, you will be able to use your keyboard.
