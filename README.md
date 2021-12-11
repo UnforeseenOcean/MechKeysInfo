@@ -173,5 +173,8 @@ You can swap the numbers around if you want, but make sure it is reflected on th
 
 19. Start changing the key names with ones from the QMK wiki key list. If you don't have a FN key or if you are not planning to use one, remove references to the FN keymap.
 20. After you're finished, if you run `qmk lint -kb (keyboard name)` it will complain about info.json. Find one that's closest to your keyboard (in my case, GH80-3000), copy it and start editing it to fit your keyboard. If you are not planning to use QMK Configurator AND you're not going to make a pull request with your design, I think just leaving it with same amount of keys should do it. (If not, please please please do make edits to that file, else other people won't be able to use the configurator!)
-21. Compile the keyboard firmware with `qmk compile -kb (keyboard name) -km (keymap name)`. You have to make sure it fits into the memory space, else you will have a build failure and need to start chopping the features out.
-22. After that, flash it onto your keyboard with QMK Companion. With any luck, you will be able to use your keyboard.
+
+UPDATE: You can press `Ctrl+Shift+I` on QMK Configurator to upload your WIP config, and edit it. In my case I needed to get rid of redundant keys, so I left few of the keys as not assigned so I can merge them later.
+
+22. Compile the keyboard firmware with `qmk compile -kb (keyboard name) -km (keymap name)`. You have to make sure it fits into the memory space, else you will have a build failure and need to start chopping the features out.
+23. After that, flash it onto your keyboard with QMK Companion. With any luck, you will be able to use your keyboard.
